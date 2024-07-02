@@ -273,10 +273,14 @@ class Admin(User):
     database.commit();
 
   def sys_dropCourse(self):
-    course = input("Please enter the name of the course you would like to drop from the system: ").upper()
-    sql_command = """DELETE * FROM COURSE WHERE TITLE = """ + course
+    crn = input("Please enter the CRN of the course you would like to drop from the system: ")
+    sql_command = """DELETE FROM COURSE WHERE CRN = """ + crn
     cursor.execute(sql_command)
-    print(course + " was Deleted From the List of Avaliable Courses\n")
+    database.commit();
+  
+    sql_command = """ALTER TABLE STUDENT DROP COLUMN CRN_%s;""" % str(crn)
+    cursor.execute(sql_command)
+    print("CRN_" + crn + " was Deleted From the List of Avaliable Courses\n")
     database.commit();
 
   def sys_addremove_user(self):
