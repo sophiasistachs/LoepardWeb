@@ -1,0 +1,25 @@
+Instructor Class
+----------------------------
+o show_classlist is not working -> Query Database for instructor name
+	-> Sophia P
+	
+
+
+Admin Class
+--------------------------------
+o sys_addCourse isn't working -> make it so it doesn not take in any parameters
+  and asks for the variables inside the function
+	->Sophia S
+
+o Assuming the same issue for sys_dropCourse
+	->Sophia S
+	
+o course_roster function has no implementation -> suppsoed to query for all students
+  and the instructor of a give course
+	->Sophia P
+	
+
+GUI
+-------------------
+o Everything (Will discuss breaking it up at a later time)
+	Getting started -> Marisa
