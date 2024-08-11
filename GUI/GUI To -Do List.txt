@@ -1,0 +1,39 @@
+
+GUI
+---------------------------------------------
+
+Student
+--------------
+o	searchcourse = Done
+
+o	addcourse = To Do
+
+o	dropcourse = To Do
+
+o	show_schedule = To Do
+
+
+Instructor
+------------------
+o	show_schedule = To Do
+
+o	show_classlist = To Do
+
+o	searchcourse = Done
+
+
+Admin
+-----------------------
+o	sys_addCourse = To Do
+
+o	sys_dropCourse = To Do
+
+o	sys_add_user = Under Construction
+
+o	sys_drop_user = Under Construction
+
+o	course_add_student = Done
+
+o	course_drop_student = Done
+
+o	course_roster = To Do
